@@ -115,7 +115,7 @@ def logical_ops(x, y):
     log_dict = {}
     log_dict['and'] = x and y
     log_dict['or'] = x or y
-    log_dict['not_or'] = not x 
+    log_dict['not_x'] = not x 
     return log_dict
 
 def bitwise_ops(a, b):
