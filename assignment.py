@@ -33,7 +33,7 @@ def loop_sum(n):
         int: Sum of numbers
     """
     sum = 0
-    for i in range(n+1):
+    for i in range(1, n+1):
         sum += i
     return sum
 
