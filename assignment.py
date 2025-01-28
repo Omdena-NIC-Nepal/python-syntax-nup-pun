@@ -33,7 +33,7 @@ def loop_sum(n):
         int: Sum of numbers
     """
     sum = 0
-    for i in range(n):
+    for i in range(n+1):
         sum += i
     return sum
 
@@ -65,11 +65,11 @@ def dict_operations(students_dict):
     Returns:
         list: Names of students with scores > 80
     """
-    stdList = []
-    for key, value in students_dict:
+    std_list = []
+    for key, value in students_dict.items():
         if value > 80:
-            stdList.append(key)
-    return stdList
+            std_list.append(key)
+    return std_list
 
 def set_operations(list1, list2):
     """
@@ -80,11 +80,11 @@ def set_operations(list1, list2):
     Returns:
         set: Common elements
     """
-    comElem = set()
+    com_elem = set()
     for num1 in list1:
         if num1 in list2:
-            comElem.add(num1)
-    return comElem
+            com_elem.add(num1)
+    return com_elem
 
 def arithmetic_ops(a, b):
     """
@@ -95,13 +95,13 @@ def arithmetic_ops(a, b):
     Returns:
         dict: Results of arithmetic operations
     """
-    opsDict = {}
-    opsDict['sum'] = a + b
-    opsDict['difference'] = a - b
-    opsDict['product'] = a * b
+    ops_dict = {}
+    ops_dict['sum'] = a + b
+    ops_dict['difference'] = a - b
+    ops_dict['product'] = a * b
     if b != 0:
         opsDict['quotient'] = a / b
-    return opsDict
+    return ops_dict
 
 def logical_ops(x, y):
     """
@@ -112,11 +112,11 @@ def logical_ops(x, y):
     Returns:
         dict: Results of logical operations
     """
-    logDict = {}
-    logDict['and'] = x and y
-    logDict['or'] = x or y
-    logDict['xor'] = x ^ y
-    return logDict
+    log_dict = {}
+    log_dict['and'] = x and y
+    log_dict['or'] = x or y
+    log_dict['not_or'] = not x 
+    return log_dict
 
 def bitwise_ops(a, b):
     """
@@ -127,8 +127,8 @@ def bitwise_ops(a, b):
     Returns:
         dict: Results of bitwise operations
     """
-    bitOps = {}
-    bitOps['and'] = a & b
-    bitOps['or'] = a | b
-    bitOps['xor'] = a ^ b
-    return bitOps
+    bit_ops = {}
+    bit_ops['and'] = a & b
+    bit_ops['or'] = a | b
+    bit_ops['xor'] = a ^ b
+    return bit_ops
