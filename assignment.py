@@ -100,7 +100,7 @@ def arithmetic_ops(a, b):
     ops_dict['difference'] = a - b
     ops_dict['product'] = a * b
     if b != 0:
-        opsDict['quotient'] = a / b
+        ops_dict['quotient'] = a / b
     return ops_dict
 
 def logical_ops(x, y):
